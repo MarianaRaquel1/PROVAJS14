@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  #botoes-racas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .botao-raca {
+    padding: 10px 15px;
+    background-color: rgb(35, 121, 233);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .botao-raca:hover {
+    background-color: rgb(8, 72, 156);
+  }
+
+  #galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .imagem-cachorro {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 600px) {
+    .botao-raca {
+      width: 100%;
+    }
+  }
