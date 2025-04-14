@@ -39,7 +39,7 @@ function carregarImagens(raca) {
     })
     .then(dados => {
       const imagens = dados.message;
-      galeria.innerHTML = ''; // Limpa a galeria anterior
+      galeria.innerHTML = ''; 
 
       imagens.forEach(url => {
         const img = document.createElement('img');
@@ -55,5 +55,5 @@ function carregarImagens(raca) {
     });
 }
 
-// Carrega as raças ao iniciar
+
 carregarRacas();
